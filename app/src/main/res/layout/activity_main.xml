@@ -1,7 +1,7 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="@color/primary"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -9,86 +9,68 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="@dimen/grid7"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:text="@string/app_title"
-        android:textColor="@color/icons"
-        android:textSize="@dimen/headline" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="@dimen/grid7"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_below="@+id/textView"
-        android:layout_marginTop="24dp"
-        android:background="@color/icons"
-        android:onClick="launchApp1"
-        android:text="@string/app1"
-        android:textColor="@color/primary_text" />
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="@dimen/grid7"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/app_title"
+            android:textColor="@color/icons"
+            android:textSize="@dimen/headline" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="@dimen/grid7"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="@dimen/grid2"
-        android:background="@color/icons"
-        android:onClick="launchApp2"
-        android:text="@string/app2"
-        android:textColor="@color/primary_text" />
+        <Button
+            android:id="@+id/spotifyButtonId"
+            style="@style/LaunchButtonStyle"
+            android:layout_alignLeft="@+id/appTitle"
+            android:layout_below="@+id/appTitle"
+            android:onClick="launchSpotifyApp"
+            android:text="@string/spotify_app" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="@dimen/grid7"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="@dimen/grid2"
-        android:background="@color/icons"
-        android:onClick="launchApp3"
-        android:text="@string/app3"
-        android:textColor="@color/primary_text" />
+        <Button
+            android:id="@+id/scoresButtonId"
+            style="@style/LaunchButtonStyle"
+            android:layout_alignLeft="@+id/spotifyButtonId"
+            android:layout_below="@+id/spotifyButtonId"
+            android:onClick="launchScoresApp"
+            android:text="@string/scores_app" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="@dimen/grid7"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_below="@+id/button3"
-        android:layout_marginTop="@dimen/grid2"
-        android:background="@color/icons"
-        android:onClick="launchApp4"
-        android:text="@string/app4"
-        android:textColor="@color/primary_text" />
+        <Button
+            android:id="@+id/libraryButtonId"
+            style="@style/LaunchButtonStyle"
+            android:layout_alignLeft="@+id/scoresButtonId"
+            android:layout_below="@+id/scoresButtonId"
+            android:onClick="launchLibraryApp"
+            android:text="@string/library_app" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="@dimen/grid7"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_below="@+id/button4"
-        android:layout_marginTop="@dimen/grid2"
-        android:background="@color/icons"
-        android:onClick="launchApp5"
-        android:text="@string/app5"
-        android:textColor="@color/primary_text" />
+        <Button
+            android:id="@+id/buildButtonId"
+            style="@style/LaunchButtonStyle"
+            android:layout_alignLeft="@+id/libraryButtonId"
+            android:layout_below="@+id/libraryButtonId"
+            android:onClick="launchBuildApp"
+            android:text="@string/build_app" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="@dimen/grid7"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_below="@+id/button5"
-        android:background="@color/icons"
-        android:layout_marginTop="@dimen/grid2"
-        android:onClick="launchApp6"
-        android:text="@string/app6"
-        android:textColor="@color/primary_text" />
+        <Button
+            android:id="@+id/baconButtonId"
+            style="@style/LaunchButtonStyle"
+            android:layout_alignLeft="@+id/buildButtonId"
+            android:layout_below="@+id/buildButtonId"
+            android:onClick="launchBaconApp"
+            android:text="@string/bacon_app" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/capstoneButtonId"
+            style="@style/LaunchButtonStyle"
+            android:layout_alignLeft="@+id/baconButtonId"
+            android:layout_below="@+id/baconButtonId"
+            android:onClick="launchCapstoneApp"
+            android:text="@string/capstone_app" />
+
+    </RelativeLayout>
+</ScrollView>

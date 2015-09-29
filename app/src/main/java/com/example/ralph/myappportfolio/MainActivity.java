@@ -38,34 +38,34 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void launchApp1(View view) {
-        Button myButton1 = (Button) findViewById(R.id.button1);
-        Toast.makeText(getApplicationContext(), "This button will launch: " + myButton1.getText(), Toast.LENGTH_SHORT).show();
+    public void launchSpotifyApp(View view) {
+        Button mySpotifyButton = (Button) findViewById(R.id.spotifyButtonId);
+        Toast.makeText(getApplicationContext(), "This button will launch: " + mySpotifyButton.getText(), Toast.LENGTH_SHORT).show();
     }
 
-    public void launchApp2(View view) {
-        Button myButton2 = (Button) findViewById(R.id.button2);
-        Toast.makeText(getApplicationContext(), "This button will launch: " + myButton2.getText(), Toast.LENGTH_SHORT).show();
+    public void launchScoresApp(View view) {
+        Button myScoresButton = (Button) findViewById(R.id.scoresButtonId);
+        Toast.makeText(getApplicationContext(), "This button will launch: " + myScoresButton.getText(), Toast.LENGTH_SHORT).show();
     }
 
-    public void launchApp3(View view) {
-        Button myButton3 = (Button) findViewById(R.id.button3);
-        Toast.makeText(getApplicationContext(), "This button will launch: " + myButton3.getText(), Toast.LENGTH_SHORT).show();
+    public void launchLibraryApp(View view) {
+        Button myLibraryButton = (Button) findViewById(R.id.libraryButtonId);
+        Toast.makeText(getApplicationContext(), "This button will launch: " + myLibraryButton.getText(), Toast.LENGTH_SHORT).show();
     }
 
-    public void launchApp4(View view) {
-        Button myButton4 = (Button) findViewById(R.id.button4);
-        Toast.makeText(getApplicationContext(), "This button will launch: " + myButton4.getText(), Toast.LENGTH_SHORT).show();
+    public void launchBuildApp(View view) {
+        Button myBuildButton = (Button) findViewById(R.id.buildButtonId);
+        Toast.makeText(getApplicationContext(), "This button will launch: " + myBuildButton.getText(), Toast.LENGTH_SHORT).show();
     }
 
-    public void launchApp5(View view) {
-        Button myButton5 = (Button) findViewById(R.id.button5);
-        Toast.makeText(getApplicationContext(), "This button will launch: " + myButton5.getText(), Toast.LENGTH_SHORT).show();
+    public void launchBaconApp(View view) {
+        Button myBaconButton = (Button) findViewById(R.id.baconButtonId);
+        Toast.makeText(getApplicationContext(), "This button will launch: " + myBaconButton.getText(), Toast.LENGTH_SHORT).show();
     }
 
-    public void launchApp6(View view) {
-        Button myButton6 = (Button) findViewById(R.id.button6);
-        Toast.makeText(getApplicationContext(), "This button will launch: "+ myButton6.getText(), Toast.LENGTH_SHORT).show();
+    public void launchCapstoneApp(View view) {
+        Button myCapstoneButton = (Button) findViewById(R.id.capstoneButtonId);
+        Toast.makeText(getApplicationContext(), "This button will launch: "+ myCapstoneButton.getText(), Toast.LENGTH_SHORT).show();
     }
 }
 
